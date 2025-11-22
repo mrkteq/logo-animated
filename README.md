@@ -8,7 +8,7 @@ A smooth, elegant logo animation built with pure HTML, CSS, and SVG. Features cu
 
 ## Screenshot
 
-![Animated Logo Demo](./assets/logo.gif)
+<img src="./assets/logo.gif" alt="Animated Logo Demo" />
 
 ## Tech Stack
 
