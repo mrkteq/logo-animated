@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Logo - Web Component Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #353535;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .example {
+            background-color: #2a2a2a;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .example h2 {
+            margin-top: 0;
+            color: #1296E6;
+        }
+
+        .example-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            background-color: #353535;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        code {
+            background-color: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        pre {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animated Logo Web Component Examples</h1>
+
+        <div class="example">
+            <h2>Basic Usage (Default Colors)</h2>
+            <div class="example-content">
+                <animated-logo></animated-logo>
+            </div>
+            <pre><code>&lt;animated-logo&gt;&lt;/animated-logo&gt;</code></pre>
+        </div>
+
+        <div class="example">
+            <h2>Custom Size</h2>
+            <div class="example-content">
+                <animated-logo width="200" height="200"></animated-logo>
+            </div>
+            <pre><code>&lt;animated-logo width="200" height="200"&gt;&lt;/animated-logo&gt;</code></pre>
+        </div>
+
+        <div class="example">
+            <h2>Custom Colors</h2>
+            <div class="example-content">
+                <animated-logo 
+                    letters-fill="#CC194D" 
+                    letters-stroke="#CC194D"
+                    globe-fill="#44A543"
+                    globe-stroke="#DEB72C">
+                </animated-logo>
+            </div>
+            <pre><code>&lt;animated-logo 
+    letters-fill="#CC194D" 
+    letters-stroke="#CC194D"
+    globe-fill="#44A543"
+    globe-stroke="#DEB72C"&gt;
+&lt;/animated-logo&gt;</code></pre>
+        </div>
+
+        <div class="example">
+            <h2>Faster Animation</h2>
+            <div class="example-content">
+                <animated-logo 
+                    letters-draw-duration="4s"
+                    letters-fill-duration="1s"
+                    globe-draw-delay="2.5s"
+                    globe-fill-delay="3s"
+                    globe-draw-duration="1s"
+                    globe-fill-duration="0.5s">
+                </animated-logo>
+            </div>
+            <pre><code>&lt;animated-logo 
+    letters-draw-duration="4s"
+    letters-fill-duration="1s"
+    globe-draw-delay="2.5s"
+    globe-fill-delay="3s"
+    globe-draw-duration="1s"
+    globe-fill-duration="0.5s"&gt;
+&lt;/animated-logo&gt;</code></pre>
+        </div>
+    </div>
+
+    <script src="animated-logo.js"></script>
+</body>
+</html>
