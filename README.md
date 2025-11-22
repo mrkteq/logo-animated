@@ -1,14 +1,14 @@
-# Animated Logo
+# Logo Animated
 
 A smooth, elegant logo animation built with pure HTML, CSS, and SVG. Features customizable stroke animations and color theming through CSS variables.
 
-## 🎬 Live Demo
+## Live Demo
 
 [View Live Demo](https://mtlogoanimated.netlify.app/)
 
 ## Screenshot
 
-![Animated Logo Demo](screenshot.png)
+![Animated Logo Demo](./assets/screenshot.png)
 
 ## Tech Stack
 
